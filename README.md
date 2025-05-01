@@ -225,6 +225,8 @@ All URIs are relative to *https://server.api.mailchimp.com/3.0*
 | **ecommerce.addPromoCode** | /ecommerce/stores/{store_id}/promo-rules/{promo_rule_id}/promo-codes |
 | **ecommerce.addPromoRules** | /ecommerce/stores/{store_id}/promo-rules |
 | **ecommerce.setStoreCustomer** | /ecommerce/stores/{store_id}/customers/{customer_id} |
+| **ecommerce.setOrder** | /ecommerce/stores/{store_id}/orders/{order_id} |
+| **ecommerce.createOrUpdateStoreProduct** | /ecommerce/stores/{store_id}/products/{product_id} |
 | **ecommerce.addProductVariant** | /ecommerce/stores/{store_id}/products/{product_id}/variants/{variant_id} |
 | **facebookAds.list** | /facebook-ads |
 | **facebookAds.getAd** | /facebook-ads/{outreach_id} |
@@ -233,6 +235,7 @@ All URIs are relative to *https://server.api.mailchimp.com/3.0*
 | **fileManager.files** | /file-manager/files |
 | **fileManager.getFile** | /file-manager/files/{file_id} |
 | **fileManager.listFolders** | /file-manager/folders |
+| **fileManager.foldersFiles** | /file-manager/folders/{folder_id}/files |
 | **fileManager.getFolder** | /file-manager/folders/{folder_id} |
 | **fileManager.updateFile** | /file-manager/files/{file_id} |
 | **fileManager.updateFolder** | /file-manager/folders/{folder_id} |
@@ -319,12 +322,12 @@ All URIs are relative to *https://server.api.mailchimp.com/3.0*
 | **reporting.getLandingPageReportsAll** | /reporting/landing-pages |
 | **reporting.getLandingPageReport** | /reporting/landing-pages/{outreach_id} |
 | **reporting.getSurveyReportsAll** | /reporting/surveys |
-| **reporting.getSurveyReport** | /reporting/surveys/{outreach_id} |
-| **reporting.getSurveyQuestionReportsAll** | /reporting/surveys/{outreach_id}/questions |
-| **reporting.getSurveyQuestionReport** | /reporting/surveys/{outreach_id}/questions/{question_id} |
-| **reporting.getSurveyQuestionAnswers** | /reporting/surveys/{outreach_id}/questions/{question_id}/answers |
-| **reporting.getSurveyResponsesAll** | /reporting/surveys/{outreach_id}/responses |
-| **reporting.getSurveyResponse** | /reporting/surveys/{outreach_id}/responses/{response_id} |
+| **reporting.getSurveyReport** | /reporting/surveys/{survey_id} |
+| **reporting.getSurveyQuestionReportsAll** | /reporting/surveys/{survey_id}/questions |
+| **reporting.getSurveyQuestionReport** | /reporting/surveys/{survey_id}/questions/{question_id} |
+| **reporting.getSurveyQuestionAnswers** | /reporting/surveys/{survey_id}/questions/{question_id}/answers |
+| **reporting.getSurveyResponsesAll** | /reporting/surveys/{survey_id}/responses |
+| **reporting.getSurveyResponse** | /reporting/surveys/{survey_id}/responses/{response_id} |
 | **reports.getAllCampaignReports** | /reports |
 | **reports.getCampaignReport** | /reports/{campaign_id} |
 | **reports.getCampaignAbuseReports** | /reports/{campaign_id}/abuse-reports |
@@ -350,6 +353,7 @@ All URIs are relative to *https://server.api.mailchimp.com/3.0*
 | **root.getRoot** | / |
 | **searchCampaigns.search** | /search-campaigns |
 | **searchMembers.search** | /search-members |
+| **Surveys.createEmail** | /lists/{list_id}/surveys/{survey_id}/actions/create-email |
 | **Surveys.publishSurvey** | /lists/{list_id}/surveys/{survey_id}/actions/publish |
 | **Surveys.unpublishSurvey** | /lists/{list_id}/surveys/{survey_id}/actions/unpublish |
 | **templateFolders.remove** | /template-folders/{folder_id} |
